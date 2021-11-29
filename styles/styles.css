@@ -1,5 +1,24 @@
+body {
+  min-height: 100vh;
+  background-color: black;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: x-large;
+  height: 10vh;
+}
+
+h1 {
+  text-align: center;
+}
+
 .userTable {
   width: 100%;
+  margin: 1.5rem 0 1.5rem;
 }
 
 th, td{
@@ -10,9 +29,20 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3rem 0 2rem;
 }
 
 input, select {
   width: 30%;
   margin-bottom: 1.5rem;
 }
+
+label {
+  padding: .6rem;
+}
+
+footer {
+  text-align: center;
+  height: 5vh;
+}
+
