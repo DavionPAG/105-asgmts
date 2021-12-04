@@ -12,18 +12,35 @@
     <nav>
       <a href="index.html" class="menu">Home</a>
       <a href="register.html" class="menu">Register</a>
-      <a href="#" class="menu">Users</a>
+      <a href="users.html" class="menu">Users</a>
     </nav>
   </header>
 
   <main>
     <h1>The Registrar</h1>
+
+    <form class="login">
+      <div>
+        <label for="un">Username</label>
+        <input id="un" type="email">
+      </div>
+      <div>
+        <label for="pw">Passcode</label>
+        <input id="pw" type="password">
+      </div>
+      <button id="login" type="button">Log In</button>
+    </form>
+
+    <div id="alertError" class="hide">
+      <p id="alertError">Invalid Credentials</p>
+    </div>
   </main>
 
   <footer>
     &copy; DPG
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="/scripts/test.js"></script>
+  <script src="/scripts/storeManger.js"></script>
+  <script src="/scripts/login.js"></script>
 </body>
 </html>

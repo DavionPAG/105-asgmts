@@ -3,7 +3,7 @@ console.log('Yo!')
 
 let id = 0;
 
-class User{
+class User {
   constructor(email, pw, fn, ln, age, address, phone, payment, color) {
     this.email = email;
     this.pw = pw;
@@ -19,7 +19,7 @@ class User{
 }
 
 function regi(e) {
-  
+
   let email = $('#email').val()
   let pw = $('#password').val()
   let fn = $('#firstName').val()
@@ -30,24 +30,22 @@ function regi(e) {
   let payment = $('#payment').val()
   let color = $('#color').val()
 
-  let newUser = new User(email,pw,fn,ln,age,address,phone,payment,color)
-  $('.userTable').append(newRow(newUser))
-  console.log(newUser)
+  let newUser = new User(email, pw, fn, ln, age, address, phone, payment, color)
+
+  saveUser(newUser)
+  clearForm()
+  alert('Donzo')
 }
 
-function newRow(user) {
-  return `<tr id="${user.id}">
-    <td>${user.fn}</td>
-    <td>${user.ln}</td>
-    <td>${user.email}</td>
-    <td>${user.age}</td>
-    <td>${user.phone}</td>
-    <td>${user.addres}</td>
-  </tr> `
+function clearForm() {
+  $('#email').val('')
+  $('#password').val('')
+  $('#firstName').val('')
+  $('#lastName').val('')
+  $('#age').val('')
+  $('#address').val('')
+  $('#phone').val('')
+  $('#payment').val('')
+  $('#color').val('')
 }
 
-function init() {
-  console.log('Init')
-}
-
-window.onload=init;

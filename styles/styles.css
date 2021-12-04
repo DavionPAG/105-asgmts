@@ -1,15 +1,33 @@
+
 body {
-  min-height: 100vh;
+  color: whitesmoke;
   background-color: black;
-  color: white;
+  font-size: larger;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Nova Mono', monospace;
 }
 
 nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-size: x-large;
+  font-size: xx-large;
   height: 10vh;
+  background-color: rgba(218, 221, 212, 0.15);
+  border: 2px solid lightblue;
+  border-radius: 1.5rem;
+  color: aliceblue;
+}
+
+a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover {
+  transform: scale(1.2);
 }
 
 h1 {
@@ -19,30 +37,69 @@ h1 {
 .userTable {
   width: 100%;
   margin: 1.5rem 0 1.5rem;
+  border: 2px solid lightblue;
+  border-radius: 1.5rem;
+  background-color: rgba(218, 221, 212, 0.15);
 }
 
-th, td{
+.td:last-child {
+  border-bottom: none;
+}
+
+th,
+td {
   padding: 2rem;
+  border-bottom: 2px inset lightblue;
+
 }
 
 form {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 3rem 0 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-around;
+  border-radius: 1.5rem;
+  border: 2px solid lightblue;
+  padding: 1.5rem;
+  padding-top: 2.2rem;
+  background-color: rgba(218, 221, 212, 0.15);
 }
 
-input, select {
-  width: 30%;
-  margin-bottom: 1.5rem;
+input,
+select {
+  width: 12rem;
+  margin-bottom: 2rem;
+  align-items: center;
 }
 
 label {
-  padding: .6rem;
+  padding: 0.6rem;
+}
+
+button {
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  padding: .4rem;
 }
 
 footer {
-  text-align: center;
-  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(218, 221, 212, 0.15);
+  border: 2px solid lightblue;
+  margin-top: auto;
+  margin-bottom: 1.2rem;
+  font-weight: bolder;
+  height: 7vh;
+  border-radius: 1.5rem;
 }
 
+#alertError {
+  color: red;
+  font-size: x-large;
+}
+
+.hide {
+  display: none;
+}
